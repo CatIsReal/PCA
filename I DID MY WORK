@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Anotheruselessproject
+{
+    class Program
+    { 
+        static void Main(string[] args)
+        {
+            int num = 800;
+            int c = 0, x = 0;
+            int [] t = new int[20];
+            while (num >= 1)
+
+            {
+                t[x] = num % 2;
+                c = num / 2;
+                num = c;
+                x = x + 1;
+            }
+
+            x = 20;
+            while (x > 0)
+
+            {
+                x = x - 1;
+                Console.Write(t[x]);
+            }
+
+            Console.Read();
+        }
+    }
+}
